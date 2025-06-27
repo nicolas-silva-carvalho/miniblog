@@ -15,9 +15,9 @@ t = 0.35 * 25.4e-6  # Espessura do condutor de cobre (m)
 sigma_c = 5.8e7     # Condutividade do cobre (S/m)
 
 # Parâmetros calculados no projeto para Z0 = 50 Ω
-W = 1.126e-3      # Largura da fita (m)
+W = 1.36e-3      # Largura da fita (m)
 Z0 = 50           # Impedância característica (Ω)
-e_eff = 7.186     # Permissividade efetiva calculada
+e_eff = 7.216     # Permissividade efetiva calculada
 u = c0 / np.sqrt(e_eff) # Velocidade de propagação na linha (m/s)
 
 # --- Faixa de Frequência ---
