@@ -1,0 +1,2 @@
+npm install --save-dev @bam.tech/react-native-make
+npx react-native-make set-icon --path ./icon.png

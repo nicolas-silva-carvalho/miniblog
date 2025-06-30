@@ -15,9 +15,11 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
-import Register from "./pages/register/Register";
+import Register from "./pages/Register/Register";
 import CreatePost from "./pages/CreatePost/CreatePost";
 import DashBoard from "./pages/Dashboard/DashBoard";
+import Search from "./pages/Search/Search";
+import Post from "./pages/Posts/Post";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -43,6 +45,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home></Home>}></Route>
               <Route path="/about" element={<About></About>}></Route>
+              <Route path="/search" element={<Search></Search>}></Route>
+              <Route path="/posts/:id" element={<Post></Post>}></Route>
               <Route
                 path="/login"
                 element={!user ? <Login></Login> : <Navigate to="/"></Navigate>}
